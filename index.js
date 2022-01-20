@@ -1,5 +1,5 @@
 (function () {
-  setInterval(() => {
+  let timer = setInterval(() => {
     const rndColor = () => {
       return Math.floor(Math.random() * 256);
     };
