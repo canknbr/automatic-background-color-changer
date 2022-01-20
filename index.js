@@ -9,5 +9,5 @@
     };
 
     document.body.style.backgroundColor = `rgb(${rndColor()},${rndColor()},${rndColor()})`;
-  }, 1500);
+  }, 1000);
 })();
