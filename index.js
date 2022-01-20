@@ -3,7 +3,11 @@
     const rndColor = () => {
       return Math.floor(Math.random() * 256);
     };
-    document.body.style.transition = 'background-color 1s ease-in-out';
+    const convertToHex = num => {
+      let hex = num.toString(16);
+      return hex.length === 1 ? `0${hex}` : hex;
+    };
+
     document.body.style.backgroundColor = `rgb(${rndColor()},${rndColor()},${rndColor()})`;
-  }, 1000);
+  }, 1500);
 })();
